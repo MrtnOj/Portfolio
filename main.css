@@ -92,8 +92,9 @@ body {
     text-align: center;
     color:  #FFF7EB;
     font-size: 4rem;
-    margin-bottom: 0.5rem;
-    font-family: 'Poppins', sans-serif;
+    margin-bottom: 120px;
+    padding-top: 40px;
+    font-family: 'Playfair Display SC', serif;
 }
 
 .portfolio-section__description {
@@ -109,10 +110,9 @@ body {
     position: relative;
     background-color: #FFF7EB;
     margin: 80px auto;
-    border-radius: 1rem;
     font-family: 'Poppins', sans-serif;
+    border-radius: 0.2rem;
     overflow: hidden;
-    box-shadow: 5px 15px 15px rgba(199, 176, 221, 0.275);
 }
 
 .project-card__header {
@@ -121,12 +121,11 @@ body {
     position: relative;
     text-align: center;
     padding: 20px 10px 10px 10px;
-    border-radius: 1rem 1rem 0 0;
     z-index: 4;
 }
 
 .project-card__title {
-    font-size: 3.5rem;
+    font-size: 3rem;
     margin: 0;
     color: white;
 }
@@ -135,7 +134,7 @@ body {
     font-size: 1.2rem;
     text-align: center;
     padding: 0.5rem;
-    margin: 0;
+    margin: 1rem 0;
     color: white;
 }
 
@@ -166,7 +165,7 @@ body {
 
 .project:hover .project-details {
     transform: translateY(0);
-    opacity: 0.9;
+    opacity: 0.95;
 }
 
 .project-details__description__title {
@@ -176,14 +175,46 @@ body {
 
 .project-details__description__text {
     font-size: 1.4rem;
-    padding: 0 30px;
+    padding: 0 45px;
+    text-align: justify;
 }
 
-.project-details__tech {
-
+.project-details__tech-list {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 20px 45px;
+    list-style: none;
 }
 
+.project-details__tech-list__element{
+    background-color: #F1896A;
+    color: white;
+    padding: 0.3rem;
+    border-radius: 0.2rem;
+}
 
+.project-details__links {
+    position: absolute;
+    left: 50%;
+    bottom: 75px;
+    transform: translateX(-50%);
+    display: flex;
+    justify-items: center;
+}
+
+.project-details__link {
+    text-decoration: none;
+    margin: 0 30px;
+    padding: 0.5rem 1rem;
+    border: 2px solid black;
+    border-radius: 20%/50%;
+}
+
+.project-details__link:hover {
+    background-color: #F1896A;
+    color:white
+}
 
 
 
