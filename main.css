@@ -85,6 +85,12 @@ body {
     color: #353531;
 }
 
+.header__link {
+    margin: 20px;
+    color: #353531;
+    opacity: 0.8;
+}
+
 .portfolio-section {
 }
 
@@ -237,8 +243,15 @@ body {
 
 .contact-section {
     height: 300px;
-    background-color:  #353531;
-    
+    background-color:  white;
+    padding: 50px 100px;
+}
+
+.contact-section__title {
+    color: #353531;
+    text-align: center;
+    font-family: 'Playfair Display SC', serif;
+    font-size: 4rem
 }
 
 
