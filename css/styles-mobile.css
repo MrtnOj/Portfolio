@@ -1,0 +1,115 @@
+@media screen and (max-width: 480px){
+    * {
+        box-sizing: border-box;
+    }
+
+    /* Navbar section starting here */
+
+    .nav {
+        height: 40px;
+    }
+
+    .nav__logo {
+        height: 2rem;
+        padding-left: 0.8rem;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .nav__hamburger {
+        display: initial;
+    }
+
+    /* Header section starting here */
+
+    .header {
+        height: 500px;
+        background-size: 450%;
+    }
+
+    .header__title {
+        margin-top: 120px;
+        font-size: 2.4rem;
+        font-weight: 800;
+    }
+
+    .header__text {
+        font-size: 1.4rem;
+    }
+
+    .header__links {
+        margin-top: 0;
+    }
+
+    .header__link {
+        font-size: 0.8rem;
+        transform: none;
+        transition: none;
+    }
+
+    /* Portfolio section starting here */
+
+    .portfolio-section__title {
+        font-size: 2rem;
+    }
+
+    .project {
+        width: 90vw;
+        height: 450px;
+    }
+
+    .project-card__header {
+        padding: 10px 5px 5px 5px;
+        height: 140px;
+    }
+
+    .project-card__title {
+        font-size: 1.4rem;
+    }
+
+    .project-card__intro {
+        font-size: 1rem;
+        margin: 0;
+    }
+
+    .project-card__screenshot-section {
+        padding: 0.3rem;
+        height: 100%;
+    }
+
+    .project-card__screenshot {
+        max-width: 45%;
+        margin: 0 5px;
+    }
+
+    .project-details {
+        display: none;
+    }
+
+
+    /* Contact section starting here */
+
+    .contact-section {
+        height: 700px;
+    }
+
+    .contact-section__title {
+        font-size: 2rem;
+    }
+
+    .contact-section__elements a{
+        margin:  5px 20px;
+        font-size: 0.8rem;
+        transform: none;
+    }
+
+    .email-form {
+        margin-top: 30px;
+        padding: 20px 10px;
+        width: 90vw;
+    }
+
+
+}
