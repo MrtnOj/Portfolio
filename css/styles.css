@@ -1,6 +1,9 @@
+* {
+    box-sizing: border-box;
+}
+
 html {
     scroll-behavior: smooth;
-    box-sizing: border-box;
 }
 
 body {
@@ -73,12 +76,42 @@ body {
     stroke-linecap: round;
 }
 
+.mobile-nav {
+    position: fixed;
+    top: 40px;
+    right: 0px;
+    width: 240px;
+    height: 300px;
+    background-color: black;
+    z-index: 10;
+    display: none;
+}
+
+.mobile-nav__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+}
+
+.mobile-nav__link {
+    margin: 10px 20px;
+    font-size: 1.5rem;
+}
+
+.mobile-nav__link a {
+    text-decoration: none;
+    color: #FFF7EB;
+}
+
 /* Header section starting here */
 
 .header {
     /* background-color: #ffddad; */
     height: 700px;
-    background-image: url(/media/background2.jpg);
+    background-image: url(../media/background2.jpg);
     background-repeat: no-repeat;
     background-size: 100vw auto;
     background-position: 0 80%;
