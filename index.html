@@ -9,7 +9,9 @@
         <meta name="author" content="Martin Ojasalu">
 
         <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css"> <!-- Main stylesheet -->
-        <link rel="stylesheet" media="screen and (max-width: 480px)" href="css/styles-mobile.css" /> <!-- Mobile stylesheet -->
+        <link rel="stylesheet" media="screen and (max-width: 1100px)" href="css/styles-tablet.css" /> <!-- Regular tablet stylesheet -->
+        <link rel="stylesheet" media="screen and (max-width: 690px)" href="css/styles-small-tablet.css" /> <!-- Smaller tablet stylesheet -->
+        <link rel="stylesheet" media="screen and (max-width: 500px)" href="css/styles-mobile.css" /> <!-- Mobile stylesheet -->
 
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap" rel="stylesheet">
@@ -59,7 +61,6 @@
         <main>
             <section class="projects-section">
                 <h1 id="Portfolio" class="portfolio-section__title">Portfolio</h1>
-                <!-- <p class="portfolio-section__description">See my finished projects along with ongoing projects below here</p> -->
                 <!-- Project card -->
                 <article class="project">
                     <header class="project-card__header">
@@ -72,7 +73,13 @@
                         <img class="project-card__screenshot" src="./media/DiscHubScoring.png" alt="DiscHub application scoring screenshot">
                         <img src="./media/DiscHubScorecard.png" alt="DiscHub app scorecard screenshot" class="project-card__screenshot">
                     </section>
-                    <!-- Project details section that appears over the screenshot section when hovering over project -->
+                    <footer class="project-card__footer">
+                        <div class="project-card__links">
+                            <a href="https://github.com/MrtnOj/DiscHub" target="_blank" class="project-card__link">Github</a>
+                            <a href="https://frozen-river-07638.herokuapp.com/" target="_blank" class="project-card__link">Demo</a>
+                        </div>
+                    </footer>
+                    <!-- Project details that appear over the project card with mouseover -->
                     <section class="project-details">
                         <h2 class="project-details__description__title">Description</h2>
                         <p class="project-details__description__text">
@@ -87,19 +94,13 @@
                             <li class="project-details__tech-list__element">MongoDb Atlas</li>
                             <li class="project-details__tech-list__element">Mongoose ORM</li>
                         </ul>
-                        <div class="project-details__links">
+                        <!-- <div class="project-details__links">
                             <a href="https://github.com/MrtnOj/DiscHub" target="_blank" class="project-details__link">Github</a>
                             <a href="https://frozen-river-07638.herokuapp.com/" target="_blank" class="project-details__link">Demo</a>
-                        </div>
+                        </div> -->
                     </section>
                 </article>
             </section>
-            <!-- <section class="about-section">
-                <h1 id="About" class="about-section__title">About me</h1>
-                <p class="about-section__text">
-                    I am a full stack web developer, currently focusing on front-front end. 
-                </p>
-            </section> -->
             <section class="contact-section">
                 <h1 id="Contact" class="contact-section__title">Contact</h1>
                 <div class="contact-section__elements">
@@ -123,7 +124,7 @@
                 </form>
             </section>
         </main>
-        <footer>
+        <footer class="footer">
             <h1 class="footer-copyright">&copy; Martin Ojasalu 2021</h1>
         </footer>
         <script src="scripts.js"></script>

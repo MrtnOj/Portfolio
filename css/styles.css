@@ -26,7 +26,7 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 5;
+    z-index: 100;
 }
 
 .nav__logo {
@@ -51,7 +51,7 @@ body {
 
 .nav-links__link a {
     font-size: 1.4rem;
-    margin-right: 3rem;
+    margin-right: 40px;
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
     color: #FFF7EB;
@@ -195,7 +195,7 @@ body {
 
 .project-card__header {
     background-color: black;
-    height: 150px;
+    height: 180px;
     position: relative;
     text-align: center;
     padding: 20px 10px 10px 10px;
@@ -218,10 +218,9 @@ body {
 
 .project-card__screenshot-section {
     padding: 1.5rem;
-    text-align: center;
     display: flex;
-    justify-content: center;
-    max-height: 70%;
+    justify-content: space-evenly;
+    height: 520px;
 }
 
 .project-card__screenshot {
@@ -272,13 +271,13 @@ body {
     border-radius: 0.2rem;
 }
 
-.project-details__links {
+/* .project-details__links {
     position: absolute;
     left: 50%;
     bottom: 75px;
     transform: translateX(-50%);
     display: flex;
-    justify-items: center;
+    justify-content: center;
 }
 
 .project-details__link {
@@ -292,29 +291,36 @@ body {
 .project-details__link:hover {
     background-color: #F1896A;
     color:white
+} */
+
+.project-card__footer {
+    position: absolute;
+    bottom: 0px;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    z-index: 20;
 }
 
-.about-section {
-    height: 500px;
+.project-card__link {
+    margin: 0 45px;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    background-color: #d0775d;
+    color:white;
+    border-radius: 20%/50%;
+}
+
+.project-card__link:hover, .project-card__link:active {
     background-color: white;
-    padding: 50px 100px;
-}
-
-.about-section__title {
-    text-align: center;
-    margin: 50px 0;
-    font-family: 'Playfair Display SC', serif;
-    font-size: 4rem;
-}
-
-.about-section__text {
-    font-family: 'Poppins', sans-serif;
-    font-size: 2rem;
-    text-align: justify;
+    color: black;
 }
 
 .contact-section {
-    height: 800px;
+    height: 850px;
     background-color:  black;
     padding: 0 100px 50px 100px;
     display: flex;
@@ -390,7 +396,7 @@ body {
     background-color: #FFF7EB;
 }
 
-footer {
+.footer {
     display: flex;
     justify-content: center;
     align-items: center;
